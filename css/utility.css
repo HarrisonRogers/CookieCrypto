@@ -1,0 +1,76 @@
+:root {
+   --primary-color: #d9e8ef;
+   --secondary-color: #aaaaaa;
+   --dark-color: #0f0f0f;
+   --light-color: #f0f0f0;
+   --medium-color: #bbbbbb;
+}
+
+/* Padding Y */
+py-05 { padding: 0.5rem 0; }
+py-1 { padding: 1rem 0; }
+py-2 { padding: 2rem 0; }
+py-3 { padding: 3rem 0; }
+py-4 { padding: 4rem 0; }
+
+/* Bg-colors */
+bg-primary {
+   background: var(--primary-color);
+   color: var(--dark-color);
+}
+bg-secondary {
+   background: var(--secondary-color);
+   color: var(--dark-color);
+}
+bg-dark {
+   background: var(--dark-color);
+   color: var(--light-color);
+}
+bg-light {
+   background: var(--light-color);
+   color: var(--dark-color);
+}
+
+bg-med {
+   background: var(--medium-color);
+   color: #fff;
+}
+
+/* text-colors */
+.text-primary {
+   color: var(--primary-color);
+}
+.text-secondary {
+   color: var(--secondary-color);
+}
+.text-light {
+   color: var(--light-color);
+}
+.text-dark {
+   color: var(--dark-color);
+}
+.text-med {
+   color: var(--medium-color);
+}
+
+/* Btn */
+.btn {
+   font-size: 1rem;
+   display: block;
+   padding: 0.5rem 2rem;
+   border-radius: 50px;
+   border: 1px solid #fff;
+   transition: all 0.7s ease;
+
+   &:hover {
+      cursor: pointer;
+      transform: scale(1.10);
+   }
+}
+
+/* container */
+.container {
+   
+   max-width: 1100px;
+   margin: auto;
+}
