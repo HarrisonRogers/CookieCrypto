@@ -50,7 +50,7 @@ label {
    /* Navbar */
    #navbar {
    height: 80px;
-   position: static;
+   position: relative;
    top: 0;
    left: 0;
    width: 100%;
