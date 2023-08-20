@@ -50,7 +50,7 @@ label {
    /* Navbar */
    #navbar {
    height: 80px;
-   position: fixed;
+   position: static;
    top: 0;
    left: 0;
    width: 100%;
@@ -98,7 +98,7 @@ label {
 
    /* Header Text */
    .header-main {
-      height: 100vh;
+      height: 90vh;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
@@ -138,6 +138,7 @@ label {
    position: relative;
    background: var(--dark-color);
    height: 100vh;
+   padding: 2rem 1rem;
 
    &::before {
       content: '';
@@ -149,6 +150,77 @@ label {
       background: linear-gradient(to bottom, rgba(217, 232, 239, 0.4), rgba(217, 232, 239, 1));
    }
 
+   .crypto-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
 
+      & h1 {
+         color: var(--dark-color);
+         text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+         font-size: 2.5rem;
+         padding-bottom: 3rem;
+      }
 
+      .grid-3 {
+         z-index: 10;
+      }
+
+      .cry-grid-content {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         height: 100%;
+         width: 100%;
+         padding: 1rem 0 4rem 0;
+
+         & h3 {
+            font-size: 2.5rem;
+            padding-bottom: 1rem;
+         } 
+      }
+
+      .grid-2 {
+         z-index: 10;
+      }
+
+      .btc-float {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .content-right {
+         display: flex;
+         flex-direction: column;
+         align-items: start;
+
+         & h1 {
+            color: #fff;
+            text-shadow: none;
+            padding-bottom: 1.5rem;
+         }
+
+         & h3 {
+            padding-bottom: 1.5rem;
+
+            & span {
+               padding: 0.4rem 1rem;
+               margin-right: 1rem;
+               border: none;
+               border-radius: 50%;
+               background: var(--light-color);
+               color: var(--dark-color);
+            }
+         }
+
+         a 
+      }
+
+   }
 }
+
