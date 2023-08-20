@@ -141,6 +141,7 @@ label {
          & h1 {
             font-size: 3rem;
             margin-bottom: 2.4rem;
+            font-weight: 400;
          }
 
          & p {
