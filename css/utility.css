@@ -1,9 +1,11 @@
 :root {
-   --primary-color: #d9e8ef;
-   --secondary-color: #aaaaaa;
+   --primary-color: #5741d9;
+   --secondary-color: #7767e4;
    --dark-color: #0f0f0f;
-   --light-color: #f0f0f0;
+   --light-color: #fff;
    --medium-color: #bbbbbb;
+   --main-text-color: rgba(88, 65, 216, 1);
+   --green-color: #08844f;
 }
 
 /* Padding Y */
@@ -59,9 +61,10 @@ bg-med {
    display: block;
    padding: 0.5rem 2rem;
    border-radius: 50px;
-   border: 1px solid #fff;
+   background: var(--primary-color);
    transition: all 0.7s ease;
    z-index: 10;
+   color: var(--light-color);
 
    &:hover {
       cursor: pointer;
@@ -69,10 +72,23 @@ bg-med {
    }
 }
 
+.btn-small {
+   padding: 0.5rem 1rem;
+}
+
+.btn-outline {
+   border: 1px solid var(--light-color);
+}
+
+.btn-light {
+   background: var(--light-color);
+   color: var(--dark-color)
+}
+
 .btn-dark {
    border-radius: 50px;
    background: var(--light-color);
-   color: #000;
+   color: #fff;
 }
 
 /* container */
