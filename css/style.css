@@ -227,7 +227,7 @@ label {
 
 #crypto-slide {
    height: 65vh;
-   background: var(--light-purple-color);
+   background: var(--light-bg);
 
    .cry-slide-content {
       display: flex;
@@ -273,6 +273,10 @@ label {
          & img {
             height: 200px;
             width: 200.23px;
+         }
+
+         & a {
+            font-weight: bold;
          }
       }
 
