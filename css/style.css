@@ -11,7 +11,7 @@ html {
 body {
    font-family: 'Poppins', sans-serif;
    line-height: 1.5;
-   background: var(--primary-color);
+   background: var(--light-color);
    color: var(--dark-color);
 }
 
@@ -35,17 +35,7 @@ label {
 #header {
    height: 100vh;
    position: relative;
-   background: var(--light-color);
-
-   &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom, rgba(217, 232, 239, 0.1), rgba(217, 232, 239, 0.4));
-   }
+   background: var(--light-purple-color);
 
    /* Navbar */
    #navbar {
@@ -162,7 +152,6 @@ label {
 #crypto {
    position: relative;
    background: #f9f9f9;
-   height: 90vh;
    padding: 2rem 1rem;
 
    .crypto-content {
@@ -236,3 +225,64 @@ label {
    }
 }
 
+#crypto-slide {
+   height: 65vh;
+   background: var(--light-purple-color);
+
+   .cry-slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 65vh;
+      line-height: 2;
+
+      & h1 {
+         font-weight: 400;
+         font-size: 2rem;
+         padding-bottom: 3rem;
+      }
+
+      & a {
+         margin-top: 3rem;
+      }
+   }
+}
+
+/* section: why crypto */
+#why-cookie {
+
+   .why-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & h1 {
+         font-weight: 400;
+         font-size: 2.8rem;
+      }
+
+      .inner-grid-why {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding: 2rem 0;
+
+         & img {
+            height: 200px;
+            width: 200.23px;
+         }
+      }
+
+      & a {
+         font-size: 0.9rem;
+      }
+
+      .btn {
+         padding: 0.9rem 2rem;
+         
+      }
+   }
+}
