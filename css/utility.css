@@ -57,6 +57,10 @@ bg-med {
    color: var(--medium-color);
 }
 
+.text-green {
+   color: var(--green-color);
+}
+
 /* Btn */
 .btn {
    font-size: 1rem;
