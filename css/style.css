@@ -313,7 +313,7 @@ label {
       }
 
       & a {
-         padding-top: 0.8rem;
+         margin-top: 0.8rem;
          font-weight: 400;
       }
    }
@@ -492,5 +492,35 @@ label {
 
 
 #start-journey {
-   height: 100vh;
+   background: var(--light-bg);
+   height: auto;
+   padding-top: 5rem;
+
+   .grid-2 {
+      grid-template-columns: 3fr 2fr;
+      padding: 10rem 1rem 0 1rem;
+
+      .j-content {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: start;
+
+         & h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            padding-bottom: 1.5rem;
+         }
+
+         & p {
+            font-size: 1.8rem;
+            padding-bottom: 1.5rem;
+         }
+      }
+   }
+
+   & img {
+      height: auto;
+      width: 100%;
+   }
 }
