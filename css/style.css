@@ -384,5 +384,113 @@ label {
 
    .btn {
       padding: 0.4rem 2rem;
+      text-align: center;
+      align-self: center;
    }
+}
+
+
+#pro {
+   background: linear-gradient(to bottom, #2c003e, #000000);
+   color: #fff;
+   position: relative;
+
+   & img {
+      width: 100%;
+      height: auto;
+      padding: 3rem 0;
+   }
+
+   .pro-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem 10rem 1rem;
+      font-weight: 400;
+
+      & h4 {
+         font-size: 1.3rem;
+         font-weight: 400;
+         padding-bottom: 1.7rem;
+      }
+
+      & h1 {
+         font-weight: 400;
+         font-size: 2.5rem;
+      }
+
+      .content {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         padding-bottom: 2rem;
+
+         & i {
+            padding-bottom: 1rem;
+         }
+
+         & h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            padding-bottom: 1rem;
+         }
+      }
+
+      #off-c {
+         position: absolute;
+         bottom: -115px;
+         left: 100px;
+         right: 100px;
+
+         .off-c-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 3rem 1.5rem;
+            border-radius: 8px;
+            background: linear-gradient(to bottom, #2c003e, #000000);
+
+            & h1 {
+               font-weight: 400;
+               margin-bottom: 1rem;
+               font-size: 1.5rem;
+
+               & span {
+                  padding: 1px 0.07rem;
+                  color: #000;
+                  background: #fff;
+                  border-radius: 8px;
+                  margin-left: 0.5rem;
+                  font-size: 1.5rem;
+               }
+            }
+
+            & p {
+               font-weight: 400;
+            }
+
+            & a {
+               padding-top: 2rem;
+               text-decoration: underline solid transparent 1px;
+               transition: all 0.3s ease;
+
+               
+               &:hover {
+                  text-decoration: underline solid #fff 2px;
+               }
+            }
+         }
+
+      }
+   }
+}
+
+
+#start-journey {
+   height: 100vh;
 }
