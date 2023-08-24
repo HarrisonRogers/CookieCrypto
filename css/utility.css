@@ -19,24 +19,24 @@
 .py-5 { padding: 5rem 0; }
 
 /* Bg-colors */
-bg-primary {
+.bg-primary {
    background: var(--primary-color);
-   color: var(--dark-color);
+   color: var(--light-color);
 }
-bg-secondary {
+.bg-secondary {
    background: var(--secondary-color);
    color: var(--dark-color);
 }
-bg-dark {
+.bg-dark {
    background: var(--dark-color);
    color: var(--light-color);
 }
-bg-light {
+.bg-light {
    background: var(--light-color);
    color: var(--dark-color);
 }
 
-bg-med {
+.bg-med {
    background: var(--medium-color);
    color: #fff;
 }

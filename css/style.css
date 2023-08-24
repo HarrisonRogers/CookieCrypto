@@ -554,3 +554,19 @@ label {
       }
    }
 }
+
+/* Footer */
+#footer {
+
+   .grid-2 {
+      grid-template-columns: 1fr 4fr;
+      padding: 2rem;
+      
+   }
+
+   .c-left {
+      & h2 {
+
+      }
+   }
+}
