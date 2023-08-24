@@ -143,8 +143,15 @@ label {
 
       .header-vid {
          display: flex;
+         flex-direction: column;
          justify-content: center;
          align-items: center;
+         text-align: center;
+
+         .btn-light {
+            border: 1px solid var(--primary-color);
+            padding: 0.7rem 1rem;
+         }
       }
    }
 }
