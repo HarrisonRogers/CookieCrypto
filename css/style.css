@@ -561,12 +561,24 @@ label {
    .grid-2 {
       grid-template-columns: 1fr 4fr;
       padding: 2rem;
-      
-   }
+      .c-left {
+         & h2 {
+            font-weight: 400;
+            padding-bottom: 1rem;
+         }
 
-   .c-left {
-      & h2 {
+         & p {
+            opacity: 0.7;
+            font-size: 1.2rem;
+            padding-bottom: 1rem;
+         }
 
+         & a {
+            text-align: center;
+            margin-bottom: 1rem;
+         }
       }
    }
+
+   
 }
