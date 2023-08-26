@@ -600,7 +600,35 @@ label {
                opacity: 0.4;
             }
          }
+
+         &:last-child {
+            grid-column-start: 3;
+            
+            .grid-4 {
+               gap: 2rem 1.3rem;
+
+               & a {
+                  transition: all 0.5s ease;
+
+                  & i {
+                  font-size: 1.15rem;
+                  
+                  }
+
+                  &:hover {
+                     cursor: pointer;
+                     opacity: 0.6;
+                  }
+            }
+
+               
+            }
+         }
       }
+   }
+
+   .grid-3 {
+      
    }
 
    
