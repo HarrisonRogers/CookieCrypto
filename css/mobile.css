@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav {
+    justify-content: center;
+
+    .nav-left {
+      flex-direction: column;
+
+      .navbar-content {
+        display: none;
+      }
+    }
+
+    .nav-right {
+      & a {
+        padding: 0.3rem 0.5rem;
+      }
+    }
+  }
+
+  /* Header */
+  .header-main {
+    height: auto;
+    grid-template-columns: 1fr;
+
+    .header-vid {
+      display: block;
+    }
+  }
+}
