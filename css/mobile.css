@@ -22,14 +22,25 @@
     .header-main {
       grid-template-columns: 1fr;
       gap: 0rem;
+      border: none;
 
       .header-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+
         & h1 {
-          font-size: 3rem;
-          margin-bottom: 0;
+          padding: 0rem 0;
+          font-size: 1.7rem;
+          margin-bottom: 0.5rem;
         }
 
         & p {
+          font-size: 1rem;
+          padding: 0;
           margin-bottom: 1rem;
         }
 
@@ -40,8 +51,8 @@
 
       .header-vid {
         & video {
-          height: 20rem;
-          width: 20rem;
+          height: 400px;
+          width: 400px;
         }
       }
     }
@@ -49,12 +60,21 @@
 
   #crypto {
     .crypto-content {
+      & h1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
       .grid-3 {
         grid-template-columns: 1fr;
       }
 
       .cry-grid-content {
         padding: 0.5rem 0;
+
+        & h3 {
+          font-size: 2rem;
+        }
       }
 
       .grid-2 {
@@ -68,7 +88,7 @@
       .content-right {
         text-align: center;
         align-items: center;
-        padding: 3rem 0 0 0;
+        padding: 8rem 0 0 0;
 
         & h3 {
           display: flex;
@@ -104,6 +124,49 @@
       }
       .btn {
         padding: 0.5rem 1rem;
+      }
+    }
+  }
+
+  #rewards {
+    .reward-content {
+      & h3 {
+        font-size: 1rem;
+      }
+
+      & h1 {
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      & p {
+        font-size: 0.8rem;
+        text-align: center;
+      }
+
+      .grid-4 {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .crypto-inner {
+        flex-direction: row;
+        padding: 1rem;
+        background: none;
+        box-shadow: none;
+        align-items: start;
+
+        &:nth-child(9) {
+          grid-area: 1;
+        }
+
+        &:nth-child(10) {
+          grid-column: 1;
+        }
+
+        & h2 {
+          font-size: 1.2rem;
+        }
       }
     }
   }
