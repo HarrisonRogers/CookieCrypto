@@ -46,4 +46,65 @@
       }
     }
   }
+
+  #crypto {
+    .crypto-content {
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .cry-grid-content {
+        padding: 0.5rem 0;
+      }
+
+      .grid-2 {
+        display: block;
+      }
+
+      .btc-float {
+        display: none;
+      }
+
+      .content-right {
+        text-align: center;
+        align-items: center;
+        padding: 3rem 0 0 0;
+
+        & h3 {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          font-weight: 400;
+
+          & span {
+            width: 45px;
+            margin: 0.5rem auto;
+          }
+        }
+      }
+    }
+  }
+
+  #why-cookie {
+    .why-content {
+      & h1 {
+        font-size: 2rem;
+      }
+
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .inner-grid-why {
+        text-align: center;
+
+        & p {
+          width: 50%;
+        }
+      }
+      .btn {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
 }
