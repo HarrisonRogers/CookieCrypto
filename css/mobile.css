@@ -218,4 +218,59 @@
       }
     }
   }
+
+  #pro {
+    & img {
+      display: none;
+    }
+
+    .pro-content {
+      & h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      & h4 {
+        font-size: 1rem;
+      }
+
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      #off-c {
+        bottom: -630px;
+
+        .off-c-content {
+          padding: 2rem 1.5rem;
+        }
+      }
+
+      .content {
+        padding-top: 2rem;
+        font-size: smaller;
+      }
+    }
+  }
+
+  #start-journey {
+    padding-top: 33rem;
+    .grid-2 {
+      grid-template-columns: 1fr;
+      width: 100%;
+
+      .j-content {
+        align-items: center;
+        text-align: center;
+
+        & p {
+          font-size: 1rem;
+        }
+
+        & h1 {
+          font-size: 2.25rem;
+        }
+      }
+    }
+  }
 }
