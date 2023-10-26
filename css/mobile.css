@@ -146,18 +146,41 @@
 
       .grid-4 {
         grid-template-columns: 1fr;
-        gap: 0;
+        gap: 0 0.3rem;
+        padding: 0;
       }
 
       .crypto-inner {
         flex-direction: row;
-        padding: 1rem;
         background: none;
         box-shadow: none;
-        align-items: start;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem;
+        gap: 0rem;
+        width: 95vw;
+        border-bottom: 1px solid rgba(189, 189, 189, 0.283);
+
+        .title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          & h2 {
+            margin-left: 1rem;
+            font-size: 1.5rem;
+          }
+        }
+
+        .sm {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
 
         &:nth-child(9) {
-          grid-area: 1;
+          grid-column: 1;
         }
 
         &:nth-child(10) {
@@ -165,8 +188,21 @@
         }
 
         & h2 {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
+
+        & h4 {
+          display: none;
+        }
+
+        & small {
+          display: block;
+        }
+      }
+
+      .grid-3 {
+        gap: 0rem;
+        width: 100%;
       }
     }
   }
