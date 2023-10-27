@@ -273,4 +273,11 @@
       }
     }
   }
+
+  #footer {
+    .grid-2 {
+      grid-template-columns: 1fr;
+      padding: 0 2rem;
+    }
+  }
 }
